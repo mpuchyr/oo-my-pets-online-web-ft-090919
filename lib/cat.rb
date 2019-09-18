@@ -7,6 +7,7 @@ class Cat
   def initalize(name)
     @name = name
     @owner = Owner.new
+    @mood = "nervous"
     @@all << self
   end
   
