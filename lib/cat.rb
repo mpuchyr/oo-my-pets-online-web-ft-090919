@@ -4,9 +4,9 @@ class Cat
   
   @@all = []
   
-  def initalize(name)
+  def initalize(name, owner_name)
     @name = name
-    @owner = Owner.new
+    @owner = Owner.new(owner_name)
     @mood = "nervous"
     @@all << self
   end
